@@ -15,6 +15,7 @@
 		0209FBFF1D7FC39B00108482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0209FBFD1D7FC39B00108482 /* LaunchScreen.storyboard */; };
 		0209FC0A1D7FC39B00108482 /* SortArrayTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0209FC091D7FC39B00108482 /* SortArrayTestTests.m */; };
 		0209FC151D7FC39B00108482 /* SortArrayTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0209FC141D7FC39B00108482 /* SortArrayTestUITests.m */; };
+		025472B71D7FC98F009D5E02 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 025472B61D7FC98F009D5E02 /* ChineseToPinyin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0209FC101D7FC39B00108482 /* SortArrayTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortArrayTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0209FC141D7FC39B00108482 /* SortArrayTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortArrayTestUITests.m; sourceTree = "<group>"; };
 		0209FC161D7FC39B00108482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025472B51D7FC98F009D5E02 /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyin.h; sourceTree = "<group>"; };
+		025472B61D7FC98F009D5E02 /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		0209FBEE1D7FC39B00108482 /* SortArrayTest */ = {
 			isa = PBXGroup;
 			children = (
+				025472B41D7FC98F009D5E02 /* ChineseToPinyin */,
 				0209FBF21D7FC39B00108482 /* AppDelegate.h */,
 				0209FBF31D7FC39B00108482 /* AppDelegate.m */,
 				0209FBF51D7FC39B00108482 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				0209FC161D7FC39B00108482 /* Info.plist */,
 			);
 			path = SortArrayTestUITests;
+			sourceTree = "<group>";
+		};
+		025472B41D7FC98F009D5E02 /* ChineseToPinyin */ = {
+			isa = PBXGroup;
+			children = (
+				025472B51D7FC98F009D5E02 /* ChineseToPinyin.h */,
+				025472B61D7FC98F009D5E02 /* ChineseToPinyin.m */,
+			);
+			path = ChineseToPinyin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0209FBF71D7FC39B00108482 /* ViewController.m in Sources */,
+				025472B71D7FC98F009D5E02 /* ChineseToPinyin.m in Sources */,
 				0209FBF41D7FC39B00108482 /* AppDelegate.m in Sources */,
 				0209FBF11D7FC39B00108482 /* main.m in Sources */,
 			);
@@ -414,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SortArrayTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyou100.SortArrayTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SortArrayTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyou100.SortArrayTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +512,7 @@
 				0209FC1B1D7FC39B00108482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0209FC1C1D7FC39B00108482 /* Build configuration list for PBXNativeTarget "SortArrayTestTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +521,7 @@
 				0209FC1E1D7FC39B00108482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0209FC1F1D7FC39B00108482 /* Build configuration list for PBXNativeTarget "SortArrayTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +530,7 @@
 				0209FC211D7FC39B00108482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
